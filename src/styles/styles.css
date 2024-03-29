@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Paytone+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.themoviedb.org/t/p/original/nnUQqlVZeEGuCRx8SaoCU4XVHJN.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  font-family: "Average Sans", sans-serif;
+}
+
+nav-jumbotron {
+  position: relative;
+  top: 38%;
+  text-align: center;
+}
+
+nav-jumbotron h1 {
+  font-family: "Paytone One", sans-serif;
+}
+
+nav-jumbotron button,
+form button {
+  background-color: #ffb703;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+nav-jumbotron p {
+  line-height: 1.4em;
+  font-size: 18px;
+}
+
+form button {
+  padding: 10px;
+}
+
+#listMovie,
+#listUpcomingMovie {
+  gap: 28px;
+}
+
+#upcoming {
+  background-color: #f8f9fa;
+}
+
+.tanggal {
+  color: #d00000;
+  font-size: 14px;
+}
+
+.card-body {
+  padding-bottom: 0;
+}
+
+.card img {
+  transition: 0.5s ease;
+}
+
+.card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+  -ms-transform: translate(-25%, -25%);
+  width: 100%;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.card:hover img {
+  opacity: 0.1;
+}
+
+.card:hover .card-text {
+  opacity: 1;
+}
+
+footer {
+  background-color: #003566;
+  color: white;
+}
